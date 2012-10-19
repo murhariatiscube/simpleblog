@@ -1,0 +1,17 @@
+
+
+<div class ="post delete">
+	<h2>Delete Post</h2>
+	
+	<%= form_for(:post, :url =>{:action => 'destroy',:id=>@post}) do |f| %>
+	
+	 <p>Are you sure you want to delete data? </p>
+     
+	
+	
+	<div class="form-buttons">
+		<%= submit_tag("Delete Post", :id=>"cbutton") %> 
+</div>
+
+<% end %>
+</div>

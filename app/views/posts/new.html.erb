@@ -1,0 +1,16 @@
+<% @page_title = 'New Post' -%>
+
+<%= content_tag('p', link_to(image_tag("back-button.jpg", :width=> 70, :height=>35), :action => 'list')) %>
+
+
+	
+	<%= form_for(:post, :url =>{:action => 'create'}) do |f| %>
+	
+	 <%= render(:partial=> "form", :locals=>{:f => f}) %>
+ 
+	
+	<%= submit_tag("Create", :id=>"createpost") %>
+<% end %>	
+
+
+

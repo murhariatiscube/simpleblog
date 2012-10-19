@@ -1,0 +1,25 @@
+Fri, 07 Sep 2012 03:55:01 -0700
+doc/README_FOR_APP	Tue, 28 Aug 2012 15:17:58 -0700
+app/controllers/application_controller.rb	Wed, 05 Sep 2012 05:24:38 -0700
+app/controllers/bposts_controller.rb	Thu, 30 Aug 2012 17:23:10 -0700
+app/controllers/categories_controller.rb	Sun, 02 Sep 2012 11:48:27 -0700
+app/controllers/comments_controller.rb	Wed, 05 Sep 2012 05:13:28 -0700
+app/controllers/main_controller.rb	Fri, 07 Sep 2012 03:34:13 -0700
+app/controllers/posts_controller.rb	Fri, 07 Sep 2012 03:44:35 -0700
+app/controllers/stuff_controller.rb	Wed, 05 Sep 2012 05:18:27 -0700
+app/controllers/users_controller.rb	Wed, 05 Sep 2012 21:53:36 -0700
+app/helpers/application_helper.rb	Thu, 06 Sep 2012 12:49:35 -0700
+app/helpers/categories_helper.rb	Sun, 02 Sep 2012 21:52:04 -0700
+app/helpers/category_helper.rb	Sun, 02 Sep 2012 21:42:31 -0700
+app/helpers/comments_helper.rb	Sun, 02 Sep 2012 16:25:33 -0700
+app/helpers/main_helper.rb	Wed, 05 Sep 2012 00:24:49 -0700
+app/helpers/posts_helper.rb	Thu, 30 Aug 2012 17:29:13 -0700
+app/helpers/stuff_helper.rb	Thu, 30 Aug 2012 15:07:14 -0700
+app/helpers/users_helper.rb	Sun, 02 Sep 2012 12:27:15 -0700
+app/helpers/user_helper.rb	Sun, 02 Sep 2012 12:26:04 -0700
+app/models/categorization.rb	Thu, 30 Aug 2012 10:59:29 -0700
+app/models/category.rb	Thu, 30 Aug 2012 11:50:06 -0700
+app/models/comment.rb	Thu, 06 Sep 2012 12:41:25 -0700
+app/models/post.rb	Thu, 06 Sep 2012 23:34:03 -0700
+app/models/user.rb	Thu, 06 Sep 2012 11:47:11 -0700
+app/models/user2.rb	Tue, 04 Sep 2012 03:40:38 -0700

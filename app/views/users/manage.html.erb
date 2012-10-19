@@ -1,0 +1,31 @@
+<% @page_title = 'Current Users' -%>
+
+<%= content_tag('p', link_to(image_tag("back-button.jpg", :width=> 70, :height=>35), :controller => 'stuff', :action => 'menu')) %>
+
+<div class="userlist left">
+	<%= render(:partial => 'Templates/listing') %>
+</div>
+<div class="userlist right">
+	<% if params[:id].blank? -%>
+		<h1>New user</h1>
+
+		<%= form_for(:user, :url => {:action => 'manage'}) do %>
+		  <%= render :partial => 'form' %>
+		  <%= submit_tag "Create" %>
+		<% end %>
+	<% else -%>
+		<h1>Editing user</h1>
+
+		<%= form_for(:user, :url => {:action => 'manage', :id => @user }) do %>
+		  <%= render :partial => 'form' %>
+		  <%= submit_tag 'Edit' %>
+		<% end %>
+
+		<%= form_for(:user, :url => {:action => 'manage', :id => @user }) do %>
+		  <%= submit_tag 'Delete' %>
+		<% end %>
+
+	<% end -%>
+
+	<%= link_to 'Back', :action => 'list' %>
+</div>

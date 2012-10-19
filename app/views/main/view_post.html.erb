@@ -1,0 +1,24 @@
+<div id="left-column">
+	<p><%= link_to(image_tag("back-button.jpg", :width=> 70, :height=>35), {:action => "list"}, 
+				:style => 'font-size: .8em;') %></p>
+	<%= render(:partial => 'Templates/post', :locals => {:post => @post}) %>
+	<div class="comments">
+		<a name="comments"></a>
+		<%= render(:partial=>'Templates/comment',:collection=>@post.approved_comments)%>
+    </div>
+</div>
+
+    <div class="comment-form">
+			
+	    <%= form_for(:comment, :url =>{:controller=>'main', :action => 'add_comment',:id=>@post.id}) do %>
+	
+	    <%= render(:partial=> "Templates/comment_form") %>
+			
+			<%= submit_tag("Submit Comment", :id=>"cbutton", :style=>"width: 10em; margin-left: 10em;" ) -%>
+		<% end -%>
+	</div>
+
+<div id="right-column">
+	<%= render(:partial => 'Templates/right_column')%>
+	<%#= render(:partial => 'Templates/categories')%>
+</div>

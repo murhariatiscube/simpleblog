@@ -1,0 +1,115 @@
+/* This is the stylesheet for the staff area 		*/
+/* It is intended to be supplemental to sblog.css 	*/
+
+.menu { margin-left: 375px; margin-top: 3em; }
+
+.categorylist { width: 200px; height: 380px; 
+	border: 1px solid #000000; }
+.categorylist h2 { font-size: 16px; margin: 0; padding: 6px; 
+	border-bottom: 1px solid #000000; }
+
+.userlist { height: 40em; margin: 0 0 3em 10px; }
+.userlist .listing { border: 1px solid #000000; height: 40em; }
+.userlist.left { float: left; width: 480px; }
+.userlist.right { float: right; width: 430px; }
+
+.comment { padding: .5em 1em .5em 1em; }
+.comment-lead { font-size: .75em; }
+.comment-text { padding: .5em .5em 1em .5em; }
+
+#login
+{
+     width: 980px;
+	 height: 500px;  
+	 
+}
+
+#video
+{	 
+    
+	 width: 490px;
+	 height: 500px;
+	 float: left;
+}
+
+
+#box2s
+{      
+      float: left;
+      margin-left: 15px;
+	  width: 400px;
+	  height: 250px;
+	  margin-top: 80px;
+      text-align: center;
+	  background: #999999;
+	 /*background: url("2box.png") no-repeat top center; */
+}
+
+#username
+{
+     margin-top: 2em;
+ 	 background-image: url("");
+	 
+} 
+#cbutton
+{
+     border-color: #888888;
+     margin-top: 1em;
+     margin-left: 4em;
+	 /*background-image: url("log.gif");*/
+	 width: 90px; 
+	 height: 30px;
+
+}
+
+#txt1
+{
+     margin-top: 2em;
+	 color: #000000;
+}
+
+#txt2
+{    
+      margin-top: 2em;
+	 color :#000000;
+}
+
+
+#password
+{
+     margin-top: 2em;
+	 margin-left: 10px;
+}
+
+#back
+{    
+     height: 3em;
+     width: 5em;
+     background-image: url("back-button.jpg");
+}
+
+#createpost
+{ 
+      
+      width: 5em;
+	  height: 2.5em;
+      background-image: url("D:/Kalpesh/RoR BB/simple_blog/app/assets/images/buttons/create.jpg");
+}
+
+#newpost
+{ 
+     margin-top: 2em;
+	 margin-left: 1em;
+     margin-right: 13em;
+	 
+     width: 5em;
+	 height: 3em;
+	 
+}
+
+#font
+{
+     font-size: 1em;
+	 color: #000000;
+}
+

@@ -1,0 +1,9 @@
+<% for column in Post.content_columns %>
+<% #Post.content_columns.each do |column| %>
+<p>s
+  <b><%= column.human_name %>:</b> <%=h @post.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @post %> |
+<%= link_to 'Back', :action => 'list' %>

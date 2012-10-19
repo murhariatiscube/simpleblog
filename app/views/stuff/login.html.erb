@@ -1,0 +1,26 @@
+<%= error_messages_for(@user)%>
+<% @page_title = 'Staff Area Login' -%>
+
+
+<!-- iSpeech Player Code -->
+<embed src="http://www.ispeech.org/color-ispeech.swf" quality="high" flashvars="style=color&autostart=yes&playlist=http://www.ispeech.org/downloads/643296/e1274af5034613791e5f286ab2749dbc09/audio.xml&gradienttopcolor=3E5EB9&gradientbottomcolor=1E4581&textcolor=FFFFFF&highlightcolor=FF8F00" type="application/x-shockwave-flash" width="0" height="0" pluginspage="http://www.macromedia.com/go/getflashplayer"></noscript>
+<!-- End of iSpeech Player Code -->
+
+<div id="login">
+ 
+<div id="video" float="left">
+<iframe width="450" height="420" src="http://www.youtube.com/embed/GIiZ6_yGm6M?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<%= form_for(:stuff, :url => {:action => 'send_login'}) do -%>
+
+<div id ="box2s" float="right">
+	<p> <b id = "txt1"> Username:</b>  <%= text_field_tag('username', params[:username], :id => "username") %></p>
+
+	<p><b id="txt2">Password:   </b><%= password_field_tag('password', :id=>"password") %></p>
+
+	<%= submit_tag("Log in", :id => "cbutton") %>
+</div>
+
+</div>
+<% end -%>

@@ -1,0 +1,11 @@
+<% @page_title = 'Current Users' -%>
+
+<%= content_tag('p', link_to(image_tag("back-button.jpg", :width=> 70, :height=>35), :controller => 'stuff', :action => 'menu')) %>
+
+<div class="userlist left">
+	<%= render(:partial => 'Templates/listing') %>
+</div>
+<div class="userlist right">
+	Please select a user on the left or create a new user.<br />
+	<%= link_to('Add New user', :action => 'manage') %>
+</div>

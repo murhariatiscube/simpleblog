@@ -1,0 +1,12 @@
+<% @page_title = 'Editing Post' -%>
+
+<%= content_tag('p', link_to(image_tag("back-button.jpg", :width=> 70, :height=>35), :action => 'list')) %>
+	
+	<%= form_for(:post, :url =>{:action => 'update',:id=>@post}) do |f| %>
+	
+	 <%= render(:partial=> "form", :locals=>{:f => f},:id=>@post) %>
+	
+	<%= submit_tag('Edit', :id=>"cbutton") %>
+<% end %>
+
+<%= link_to('Preview Post', {:action => 'show', :id => @post}, :id=>"cbutton", :target => "_blank") %>

@@ -1,0 +1,42 @@
+<% @page_title = 'Listing Posts' %>
+
+
+<%= content_tag('p', link_to(image_tag("back-button.jpg", :width=> 70, :height=>35),  :controller => 'stuff', :action => 'menu')) %>
+
+<table>
+	<tr>
+		<th>Created</th>
+		<th>Title</th>
+		<th>Author</th>
+		<th>Categories</th>
+		<th>Status</th>
+		<th>Comments</th>
+	</tr>
+  
+
+<% @posts.each do |post| %>
+<tr class="<%= cycle('row1', 'row2')%>">
+	    <td><%= post.created_at.strftime('%m/%d/%y %I:%m %p') %></td>
+		<td><%= post.title %></td>
+		<td><%= post.user.display_name if post.user %></td>
+		<td><%= post.categories.collect {|cat| cat.name }.join(", ") %>
+		<td><%= post.status %></td>
+		<td><%= post.comments_count %>			
+			
+		
+         <td><%= link_to(image_tag("D:/Kalpesh/RoR BB/simple_blog/app/assets/images/buttons/preview.jpg", :width=>60, :height=>30), {:action => 'show', :id => post}, :target => '_blank') %></td>
+		<td><%= link_to(image_tag("D:/Kalpesh/RoR BB/simple_blog/app/assets/images/buttons/edit.jpg", :width=>60, :height=>30), :action => 'edit', :id => post) %></td>
+        <td><%= link_to(image_tag("D:/Kalpesh/RoR BB/simple_blog/app/assets/images/buttons/delete.jpg", :width=>60, :height=>30), { :action => 'delete', :id => post }, :confirm => 'Are you sure you want to permanently remove this post?', :method => :post) %></td>
+	</tr>
+
+<% end %>
+
+</table>
+
+<%#= link_to 'Previous page', { :page => @post_pages.current.previous } if @post_pages.current.previous %>
+<%#= link_to 'Next page', { :page => @post_pages.current.next } if @post_pages.current.next %> 
+<%= will_paginate(@posts)%>
+
+<div id="newpost">
+<b><%= link_to (image_tag("D:/Kalpesh/RoR BB/simple_blog/app/assets/images/buttons/new.jpg", :width=>60, :height=>30)), :action => 'new'%></b>
+</div>

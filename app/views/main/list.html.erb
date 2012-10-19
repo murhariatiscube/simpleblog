@@ -1,0 +1,17 @@
+<div id="left-column">
+	<div id="posts">
+		     <%#= render(:partial=>'Templates/post',:locals=>{:post=>post}) %>
+		<%# @posts.each do |post| -%>
+			<%#end -%>  
+			<%# here post play two role%>    
+		     <%= render(:partial =>'Templates/post',:collection=>@posts) %>
+		     <%= 'there are no posts that match your selection.'if @posts.empty? %>
+		     
+	</div>
+	<%= will_paginate(@posts)%>
+</div>
+
+<div id="right-column">
+	<%= render(:partial=>'Templates/right_column') %>
+	<%#= render(:partial => 'Templates/categories')%>
+</div>

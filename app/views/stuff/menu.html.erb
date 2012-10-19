@@ -1,0 +1,13 @@
+<% @page_title = 'Staff Menu' -%>
+
+<!-- iSpeech Player Code -->
+<embed src="http://www.ispeech.org/color-ispeech.swf" quality="high" flashvars="style=color&autostart=yes&playlist=http://www.ispeech.org/downloads/643296/6cc5f4a6a6037761c52f6a7169c337d109/audio.xml&gradienttopcolor=3E5EB9&gradientbottomcolor=1E4581&textcolor=FFFFFF&highlightcolor=FF8F00" type="application/x-shockwave-flash" width="0" height="0" pluginspage="http://www.macromedia.com/go/getflashplayer"></noscript>
+<!-- End of iSpeech Player Code -->
+
+<ul class="menu">
+	<li><%= link_to('Manage Posts', :controller => 'posts') %></li>
+	<li><%= link_to('Manage Categories', :controller => 'categories') %></li>
+	<li><%= link_to('Manage Comments', :controller => 'comments') %></li>
+	<li><%= link_to('Manage Users', :controller => 'users') %></li>
+	<li><%= link_to('Logout', :action => 'logout') %></li>
+</ul>
